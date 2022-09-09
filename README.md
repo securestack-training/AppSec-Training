@@ -10,48 +10,101 @@ Sponsored with 💜  by
 <a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="500"/></center></a>
 
 
-## Tools
+# Tools
 
-# SAST
-Semgrep - https://github.com/returntocorp/semgrep
+## SAST
 
-# SCA
-NPM - Build in
-Dependency Check - https://github.com/jeremylong/DependencyCheck
+### Semgrep 
+
+https://github.com/returntocorp/semgrep
+
+Simple auto scan: ``` semgrep --config auto ```
+
+CI/CD scan: ``` semgrep --config "p/r2c-ci" ```
+
+OWASP Top Ten scan: ``` semgrep --config "p/owasp-top-ten" ```
+
+Generic security scan: ``` semgrep --config "p/r2c-security-audit" ```
+
+## SCA
+
+### NPM
 
 
-# Secret/Credential Scanning
+### Dependency Check 
+https://github.com/jeremylong/DependencyCheck
 
-Trufflehog - https://github.com/trufflesecurity/trufflehog
+
+## Secret/Credential Scanning
+
+### Trufflehog
+
+https://github.com/trufflesecurity/trufflehog
 
 Scan a local filesystem: ``` trufflehog filesystem --directory=./ ```
 
 Scan a remote git repo: ``` trufflehog git https://github.com/securestack-training/juiceshop ```
 
-Gitleaks 8 - https://github.com/zricethezav/gitleaks
+### Gitleaks 8
+
+https://github.com/zricethezav/gitleaks
 
 ``` gitleaks detect -v ```
 
-Gitleaks 7 - https://github.com/zricethezav/gitleaks/releases/tag/v7.6.1
+### Gitleaks 7 
+
+https://github.com/zricethezav/gitleaks/releases/tag/v7.6.1
 
 ``` gitleaks7 -v -r https://github.com/securestack-training/juiceshop ```
 
-# Vulnerability Scanning
-Nuclei - https://github.com/projectdiscovery/nuclei
-Nikto - https://github.com/sullo/nikto
-Nmap - https://github.com/vulnersCom/nmap-vulners
+## Vulnerability Scanning
+
+### Nuclei
+
+https://github.com/projectdiscovery/nuclei
+
+Run simple nuclei scan: ``` nuclei -u https://app.niftybank.org ```
+
+Run better nuclei scan: ``` nuclei -silent -eid http-missing-security-headers -u https://app.niftybank.org ```
+
+### Nikto 
+
+https://github.com/sullo/nikto
+
+Simple Nikto scan: ``` nikto -host  app.niftybank.org ```
+
+### Nmap
+
+https://github.com/vulnersCom/nmap-vulners
+
+Simple vulners scan: ``` nmap -sV --script=nmap-vulners app.niftybank.org ```
+
 Nmap - https://github.com/scipag/vulscan
 
-# Cloud security
-Prowler - https://github.com/prowler-cloud/prowler
+Nmap NTLM scan: ``` nmap -p 80 --script http-ntlm-info --script-args http-ntlm-info.root=/root/ cifs.niftybank.org ```
 
-# DAST
-Zed Attack Proxy (ZAP) - https://www.zaproxy.org/
-Burp Suite - https://portswigger.net/burp
 
-# SBOM
-Sift - https://github.com/anchore/syft
+## Cloud security
 
+Prowler
+
+https://github.com/prowler-cloud/prowler
+
+## DAST
+
+### Zed Attack Proxy (ZAP) 
+
+https://www.zaproxy.org/
+
+### Burp Suite 
+
+https://portswigger.net/burp
+
+## SBOM
+
+### Sift 
+
+https://github.com/anchore/syft
 
 # SecureStack
 
