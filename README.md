@@ -116,9 +116,13 @@ https://portswigger.net/burp
 
 https://github.com/anchore/syft
 
+### CycloneDX Node
+
+Simple node scan: ``` cyclonedx-node --output bom.json ```
+
 ### CycloneDX NPM 
 
-Simple npm scan: ``` cyclonedx-node --output bom.json ```
+Simple npm scan: ``` cyclonedx-npm --output-file ./npm.json ```
 
 # SecureStack
 
