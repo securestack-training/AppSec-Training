@@ -116,6 +116,8 @@ https://portswigger.net/burp
 
 https://github.com/anchore/syft
 
+Simple Syft scan: ``` syft packages file:./package-lock.json ```
+
 ### CycloneDX Node
 
 Simple node scan: ``` cyclonedx-node --output bom.json ```
