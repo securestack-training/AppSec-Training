@@ -112,7 +112,7 @@ https://portswigger.net/burp
 
 ## SBOM
 
-### Sift 
+### Syft 
 
 https://github.com/anchore/syft
 
