@@ -28,6 +28,16 @@ Generic security scan: ``` semgrep --config "p/r2c-security-audit" ```
 
 ## SCA
 
+### Scancode Toolkit
+
+https://github.com/nexB/scancode-toolkit
+
+Simple scan: ``` scancode --license --copyright --json-pp scancode_result.json ./ ```
+
+### OWASP Dependency Check
+
+Simple auto scan: ``` dependency-check --out . --scan ./  -f JSON ```
+
 ### NPM
 
 
@@ -106,23 +116,28 @@ https://portswigger.net/burp
 
 https://github.com/anchore/syft
 
+### CycloneDX NPM 
+
+Simple npm scan: ``` cyclonedx-node --output bom.json ```
+
 # SecureStack
 
+### SCA
 
-## What's been mapped so far?
+Single commit SCA scan: ``` bloodhound-cli code -t node -a <app_id> ```
 
-- [x] mapped all of ISM GSD
-- [x] mapped all of SSDF
-- [x] mapped CIS section 16
+### Secrets & Credentials
+
+Secret scan: ``` bloodhound-cli code -s -a <app_id> ```
+
+### Web vulnerability
+
+Web vuln scan: ``` bloodhound-cli recon -a <app_id> ```
 
 ## What's left to do?
 
 - [ ] map CIS section other than 16 to all items
 - [ ] map remaining ISO 27001 Annex 14
-- [ ] create compliance section for ISO 27002
-- [ ] map brand new ISO 27002 controls
-- [ ] map remaining NIST 800-53
-- [ ] map remaining ISM infrastructure
 
 ## About the author
 
