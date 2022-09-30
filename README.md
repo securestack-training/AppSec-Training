@@ -126,6 +126,18 @@ Simple node scan: ``` cyclonedx-node --output bom.json ```
 
 Simple npm scan: ``` cyclonedx-npm --output-file ./npm.json ```
 
+### Microsoft Salus SBOM
+
+https://github.com/microsoft/sbom-tool
+
+Simple Salus scan: ``` microsoft-sbom-tool generate -bc ./  -b ./SPDX -pn app.niftybank.org -pv 1.0 -nsb https://app.niftybank.org -ps test ```
+
+### OSS Review Toolkit (ORT)
+
+https://github.com/oss-review-toolkit/ort
+
+Simple ORT scan:
+
 # SecureStack
 
 ### SCA
@@ -139,6 +151,10 @@ Secret scan: ``` bloodhound-cli code -s -a <app_id> ```
 ### Web vulnerability
 
 Web vuln scan: ``` bloodhound-cli recon -a <app_id> ```
+
+### SBOM generation
+
+SecureStack SBOM Generation: ``` bloodhound-cli SBOM -r -a <app_id> ```
 
 ## What's left to do?
 
