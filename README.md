@@ -76,9 +76,11 @@ https://github.com/zricethezav/gitleaks/releases/tag/v7.6.1
 
 https://github.com/projectdiscovery/nuclei
 
-Run simple nuclei scan: ``` nuclei -u https://app.niftybank.org ```
+Run kitchen sink nuclei scan: ``` nuclei -u https://app.niftybank.org ```
 
-Run better nuclei scan: ``` nuclei -silent -eid http-missing-security-headers -u https://app.niftybank.org ```
+Run faster nuclei scan: ``` nuclei -silent -eid http-missing-security-headers -u https://app.niftybank.org ```
+
+Find only criticals and highs: ``` nuclei -silent -eid http-missing-security-headers -u https://app.niftybank.org ```
 
 ### Nikto 
 
@@ -112,6 +114,10 @@ https://www.zaproxy.org/
 ### Burp Suite 
 
 https://portswigger.net/burp
+
+### Caido
+
+https://caido.io/
 
 ## SBOM
 
