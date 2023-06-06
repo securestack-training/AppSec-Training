@@ -36,14 +36,17 @@ Simple scan: ``` scancode --license --copyright --json-pp scancode_result.json .
 
 ### OWASP Dependency Check
 
+https://github.com/jeremylong/DependencyCheck
+
 Simple auto scan: ``` dependency-check --out . --scan ./  -f JSON ```
 
 ### NPM
 
+https://docs.npmjs.com/cli/v9/commands/npm-audit
 
-### Dependency Check 
-https://github.com/jeremylong/DependencyCheck
+Simple auto scan: ``` npm audit ```
 
+Forced fix scan: ``` npm audit fix ```
 
 ## Secret/Credential Scanning
 
