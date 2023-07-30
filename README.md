@@ -26,6 +26,12 @@ OWASP Top Ten scan: ``` semgrep --config "p/owasp-top-ten" ```
 
 Generic security scan: ``` semgrep --config "p/r2c-security-audit" ```
 
+### Trivy SAST
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy fs --scanners vuln myproject/ ```
+
 ## SCA
 
 ### Scancode Toolkit
@@ -48,6 +54,20 @@ Simple auto scan: ``` npm audit ```
 
 Forced fix scan: ``` npm audit fix ```
 
+### Trivy SCA
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy fs --scanners config myproject/ ```
+
+## Container Vulnerability Scanning
+
+### Trivy container scanning
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy image python:3.4-alpine ```
+
 ## Secret/Credential Scanning
 
 ### Trufflehog
@@ -69,6 +89,12 @@ https://github.com/zricethezav/gitleaks
 https://github.com/zricethezav/gitleaks/releases/tag/v7.6.1
 
 ``` gitleaks7 -v -r https://github.com/securestack-training/juiceshop ```
+
+### Trivy Secret Scanning
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy fs --scanners secret myproject/ ```
 
 ## Vulnerability Scanning
 
@@ -146,6 +172,12 @@ Simple Salus scan: ``` microsoft-sbom-tool generate -bc ./  -b ./SPDX -pn app.ni
 https://github.com/oss-review-toolkit/ort
 
 Simple ORT scan:
+
+# Trivy All-in-One
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy fs --scanners vuln,secret,config myproject/ ```
 
 # SecureStack
 
