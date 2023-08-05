@@ -26,11 +26,17 @@ OWASP Top Ten scan: ``` semgrep --config "p/owasp-top-ten" ```
 
 Generic security scan: ``` semgrep --config "p/r2c-security-audit" ```
 
-### Trivy SAST
+### Bearer 
 
-https://github.com/aquasecurity/trivy
+https://github.com/bearer/bearer
 
-Simple auto scan: ``` trivy fs --scanners vuln myproject/ ```
+Simple auto scan: ``` bearer scan ./ --scanner=sast ```
+
+### Bandit (Python only)
+
+https://github.com/PyCQA/bandit
+
+Simple auto scan: ``` bandit -r ./myproject ```
 
 ## SCA
 
@@ -54,11 +60,12 @@ Simple auto scan: ``` npm audit ```
 
 Forced fix scan: ``` npm audit fix ```
 
+
 ### Trivy SCA
 
 https://github.com/aquasecurity/trivy
 
-Simple auto scan: ``` trivy fs --scanners config myproject/ ```
+Simple auto scan: ``` trivy fs --scanners vuln myproject/ ```
 
 ## Container Vulnerability Scanning
 
@@ -124,6 +131,21 @@ Nmap - https://github.com/scipag/vulscan
 
 Nmap NTLM scan: ``` nmap -p 80 --script http-ntlm-info --script-args http-ntlm-info.root=/root/ cifs.niftybank.org ```
 
+## Infrastructure as Code
+
+### Trivy Config
+
+https://github.com/aquasecurity/trivy
+
+Simple auto scan: ``` trivy fs --scanners config myproject/ ```
+
+## CI/CD Pipeline Analysis
+
+### Ghast
+
+https://github.com/bin3xish477/ghast
+
+Simple auto scan: ``` ghast -d directory-with-actions/ ```
 
 ## Cloud security
 
