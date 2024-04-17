@@ -3,9 +3,7 @@ Copyright 2022 - Paul McCarty
 # AppSec training
 This playbook will help you introduce effective DevSecOps practices in your company, regardless of size. We provide explicit guidance and actionable steps to introduce security controls, measure their effectiveness, and demonstrate value for money to your business leaders. Following this playbook will help teams build materially more secure applications, and that in the end, is the intent.
 
-
-![DIY-Application-Security-Program](https://github.com/securestack-training/AppSec-Training/assets/7798480/4394368c-3ce7-4252-9627-658c0d795b11)
-
+![DIY-Application-Security-Program](https://github.com/securestack-training/AppSec-Training/assets/7798480/885c47cc-dbc8-4e5f-a661-420fb58be4cd)
 
 # Tools
 
