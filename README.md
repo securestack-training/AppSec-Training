@@ -4,10 +4,7 @@ Copyright 2022 - Paul McCarty
 This playbook will help you introduce effective DevSecOps practices in your company, regardless of size. We provide explicit guidance and actionable steps to introduce security controls, measure their effectiveness, and demonstrate value for money to your business leaders. Following this playbook will help teams build materially more secure applications, and that in the end, is the intent.
 
 
-## Sponsors 
-Sponsored with 💜  by
-
-<a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="500"/></center></a>
+![DIY-Application-Security-Program](https://github.com/securestack-training/AppSec-Training/assets/7798480/4394368c-3ce7-4252-9627-658c0d795b11)
 
 
 # Tools
@@ -228,4 +225,7 @@ SecureStack SBOM Generation: ``` bloodhound-cli SBOM -r -a <app_id> ```
 
 My name is Paul McCarty and I'm the founder of [SecureStack](https://securestack.com). I created this document as a way to capture in one place the steps I took to implement DevSecOps functions into my team. If you have any questions you can contact me at hello@securestack.com or on twitter [@eastside-mccarty](https://twitter.com/eastsidemccarty) 
 
+## Sponsors 
+Sponsored with 💜  by
 
+<a href="https://securestack.com" target=”_blank” rel="noopener noreferrer"><center><img src="https://securestack.com/wp-content/uploads/2021/09/securestack-horizontal.png" width="500"/></center></a>
