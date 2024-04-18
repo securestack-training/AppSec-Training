@@ -33,6 +33,13 @@ https://github.com/PyCQA/bandit
 
 Simple auto scan: ``` bandit -r ./myproject ```
 
+### Brakeman (Ruby on Rails only)
+
+https://github.com/presidentbeef/brakeman
+
+Simple scan: ``` brakeman ```
+Specify path scan: ``` brakeman -p ./path_to_rails_app/ ```
+
 ## SCA
 
 ### Scancode Toolkit
