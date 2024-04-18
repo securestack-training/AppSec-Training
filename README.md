@@ -38,6 +38,7 @@ Simple auto scan: ``` bandit -r ./myproject ```
 https://github.com/presidentbeef/brakeman
 
 Simple scan: ``` brakeman ```
+
 Specify path scan: ``` brakeman -p ./path_to_rails_app/ ```
 
 ## SCA
